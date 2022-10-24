@@ -1,9 +1,9 @@
 # Starter pipeline
-- task: DotNetCoreCLI@2
+- task: AzureMysqlDeployment@1
   inputs:
-    command: 'publish'
-    publishWebProjects: true
-    arguments: 'devop-project'
+    ServerName: 'Emmylong1'
+    TaskNameSelector: 'SqlTaskFile'
+    IpDetectionMethod: 'AutoDetect'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
